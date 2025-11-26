@@ -1,0 +1,54 @@
+<!-- 
+=====================================================
+COOKIE CONSENT BANNER - EASY INCLUDE
+=====================================================
+Copy and paste this ENTIRE section before the closing </body> tag
+on EVERY page of your website (both startekk.net and starworkforce.net)
+===================================================== 
+-->
+
+<!-- Cookie Consent Banner HTML -->
+<div id="cookie-consent-banner" style="position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:20px;box-shadow:0 -4px 20px rgba(0,0,0,0.3);z-index:999999;display:none">
+    <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px">
+        <div style="flex:1;min-width:300px">
+            <h3 style="margin:0 0 10px 0;font-size:20px;font-weight:600"><span style="font-size:24px;margin-right:12px">🍪</span>Cookie Notice</h3>
+            <p style="margin:0;font-size:14px;line-height:1.6;color:#e0e0e0">
+                We use cookies to enhance your browsing experience and analyze site traffic. 
+                By clicking "Accept All", you consent to our use of cookies. 
+                <a href="/legal/cookie-policy.html" style="color:#4CAF50;text-decoration:underline">Learn more</a>
+            </p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <button id="cookie-accept" style="padding:12px 24px;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;background:linear-gradient(135deg,#4CAF50 0%,#45a049 100%);color:white">Accept All</button>
+            <button id="cookie-decline" style="padding:12px 24px;border:2px solid #fff;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;background:transparent;color:#fff">Decline</button>
+            <button id="cookie-settings" style="padding:12px 24px;border:2px solid #4CAF50;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;background:transparent;color:#4CAF50">Settings</button>
+        </div>
+    </div>
+</div>
+
+<!-- Cookie Consent JavaScript -->
+<script>
+(function(){var e="cookie_consent",t=365,n={startekk:"G-8BFZG3R9ZR",starworkforce:"G-W3QGRJGB6M"},o={init:function(){console.log("🍪 Cookie Consent Manager initialized");var e=this.getConsent();null===e?this.showBanner():"accepted"===e?this.loadGoogleAnalytics():console.log("🍪 Cookies declined by user"),this.attachEventListeners()},getConsent:function(){return this.getCookie(e)},showBanner:function(){var e=document.getElementById("cookie-consent-banner");e&&(e.style.display="block",console.log("🍪 Cookie banner displayed"))},hideBanner:function(){var e=document.getElementById("cookie-consent-banner");e&&(e.style.display="none",console.log("🍪 Cookie banner hidden"))},acceptCookies:function(){this.setConsent("accepted"),this.hideBanner(),this.loadGoogleAnalytics(),console.log("✅ Cookies accepted")},declineCookies:function(){this.setConsent("declined"),this.hideBanner(),console.log("❌ Cookies declined")},openSettings:function(){window.location.href="/legal/cookie-policy.html"},setConsent:function(n){this.setCookie(e,n,t)},loadGoogleAnalytics:function(){var e,t=window.location.hostname;if(e=t.includes("startekk")?n.startekk:t.includes("starworkforce")?n.starworkforce:n.startekk,console.log("🌐 Loading Google Analytics: "+e),!window.gtag){var o=document.createElement("script");o.async=!0,o.src="https://www.googletagmanager.com/gtag/js?id="+e,document.head.appendChild(o),window.dataLayer=window.dataLayer||[],window.gtag=function(){dataLayer.push(arguments)},gtag("js",new Date),gtag("config",e,{anonymize_ip:!0,cookie_flags:"SameSite=None;Secure"}),console.log("✅ Google Analytics loaded: "+e)}else console.log("⚠️ Google Analytics already loaded")},attachEventListeners:function(){var e=document.getElementById("cookie-accept"),t=document.getElementById("cookie-decline"),n=document.getElementById("cookie-settings");e&&e.addEventListener("click",()=>this.acceptCookies()),t&&t.addEventListener("click",()=>this.declineCookies()),n&&n.addEventListener("click",()=>this.openSettings())},setCookie:function(e,t,n){var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);var i="expires="+o.toUTCString();document.cookie=e+"="+t+";"+i+";path=/;SameSite=Lax"},getCookie:function(e){for(var t=e+"=",n=document.cookie.split(";"),o=0;o<n.length;o++){for(var i=n[o];" "===i.charAt(0);)i=i.substring(1,i.length);if(0===i.indexOf(t))return i.substring(t.length,i.length)}return null}};"loading"===document.readyState?document.addEventListener("DOMContentLoaded",function(){o.init()}):o.init(),window.CookieConsent=o})();
+</script>
+
+<!-- 
+=====================================================
+END OF COOKIE CONSENT BANNER
+=====================================================
+THAT'S IT! The banner will now:
+✅ Show on first visit
+✅ Remember user choice for 365 days
+✅ Load correct GA ID (StartTekk: G-8BFZG3R9ZR, StarWorkforce: G-W3QGRJGB6M)
+✅ Work on mobile
+✅ GDPR compliant
+
+TO TEST:
+1. Clear your cookies
+2. Reload the page
+3. You should see the banner at bottom
+4. Click "Accept All"
+5. Open browser console (F12)
+6. Look for: "✅ Google Analytics loaded: G-XXXXXXXXX"
+7. Reload page - banner should NOT appear again
+===================================================== 
+-->
