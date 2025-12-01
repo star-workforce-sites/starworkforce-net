@@ -1,70 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility Statement - WCAG Compliance</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50">
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold bg-gradient-to-r from-green-600 to-lime-500 bg-clip-text text-transparent">StartTekk</div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="/" class="text-gray-700 hover:text-green-600 transition">Home</a>
-                    <a href="/about.html" class="text-gray-700 hover:text-green-600 transition">About</a>
-                    <a href="/contact.html" class="text-gray-700 hover:text-green-600 transition">Contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="max-w-4xl mx-auto px-4 py-12">
-        <div class="bg-white rounded-lg shadow-lg p-8">
-            <h1 class="text-4xl font-bold text-gray-900 mb-6">Accessibility Statement</h1>
-            <p class="text-sm text-gray-600 mb-8"><strong>Last Updated:</strong> November 26, 2025</p>
-            <div class="prose prose-lg max-w-none">
-                
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Commitment</h2>
-                <p class="text-gray-700 mb-4">
-                    StartTekk LLC and StarWorkforce Solutions are committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying relevant accessibility standards.
-                </p>
-            </section>
+#!/bin/bash
 
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Conformance Status</h2>
-                <p class="text-gray-700 mb-4">
-                    Our websites conform to WCAG 2.1 Level AA standards. We use the following methods to ensure accessibility:
-                </p>
-                <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
-                    <li>Semantic HTML for screen reader compatibility</li>
-                    <li>Keyboard navigation support</li>
-                    <li>Sufficient color contrast ratios</li>
-                    <li>Alternative text for images</li>
-                    <li>Clear and consistent navigation</li>
-                    <li>Mobile-responsive design</li>
-                </ul>
-            </section>
-
-            <section class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Feedback</h2>
-                <p class="text-gray-700 mb-4">
-                    We welcome your feedback on the accessibility of our websites. If you encounter accessibility barriers, please contact us:
-                </p>
-                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
-                    <p class="text-gray-700 mb-2"><strong>StartTekk LLC & StarWorkforce Solutions</strong></p>
-                    <p class="text-gray-700 mb-2">5465 Legacy Drive Suite 650, Plano, TX 75024</p>
-                    <p class="text-gray-700 mb-2"><strong>Phone:</strong> <a href="tel:+14697133993" class="text-green-600">(469) 713-3993</a></p>
-                    <p class="text-gray-700"><strong>Email:</strong> <a href="mailto:accessibility@startekk.net" class="text-green-600">accessibility@startekk.net</a></p>
-                </div>
-            </section>
-        
-            </div>
-        </div>
-    </main>
-    
-    <!-- UNIVERSAL FOOTER -->
+FOOTER='    <!-- UNIVERSAL FOOTER -->
     <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white mt-16">
         <div class="max-w-7xl mx-auto px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -117,4 +53,8 @@
         </div>
     </footer>
 </body>
-</html>
+</html>'
+
+echo "$FOOTER" > /tmp/footer.html
+echo "✅ Footer template ready"
+
