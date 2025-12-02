@@ -3,132 +3,491 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Openings - Star Workforce Solutions</title>
-    <meta name="description" content="Browse IT job openings. Contract, contract-to-hire, and permanent positions across all technology domains with top companies.">
+    <title>IT Jobs & Careers | Remote & Onsite Opportunities | StarWorkforce</title>
+    <meta name="description" content="Browse IT staffing opportunities across USA, nearshore, and offshore. Software engineering, DevOps, QA, data science, and AI/ML roles. Apply today.">
+    <meta name="keywords" content="IT jobs, software engineer jobs, remote developer jobs, offshore IT careers, AI ML jobs">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="IT Careers | StarWorkforce">
+    <meta property="og:description" content="Join our team of 150+ IT professionals. Remote and onsite opportunities available.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3QGRJGB6M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W3QGRJGB6M');
+    </script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #7C3AED 0%, #E8C547 100%);
+        }
+        .job-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        .job-card:hover {
+            transform: translateX(4px);
+            border-left-color: #7C3AED;
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.15);
+        }
+        .filter-tag {
+            transition: all 0.2s;
+        }
+        .filter-tag:hover {
+            transform: scale(1.05);
+        }
+        .filter-tag.active {
+            background: #7C3AED;
+            color: white;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
+
     <!-- Navigation -->
-    <nav style="background-color: #1a0b2e;" class="sticky top-0 z-50 shadow-lg">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: linear-gradient(135deg, #7C3AED 0%, #E8C547 100%);">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="text-xl font-bold text-white">STAR Workforce</div>
-                        <div class="text-xs" style="color: #E8C547;">Solutions</div>
-                    </div>
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-purple-700" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span class="text-2xl font-bold gradient-bg bg-clip-text text-transparent">StarWorkforce</span>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-white hover:text-yellow-400 transition-colors">Home</a>
-                    <a href="about.html" class="text-white hover:text-yellow-400 transition-colors">About</a>
-                    <a href="services.html" class="text-white hover:text-yellow-400 transition-colors">Services</a>
-                    <a href="jobs.html" class="text-white hover:text-yellow-400 transition-colors font-semibold">Jobs</a>
-                    <a href="contact.html" class="px-4 py-2 rounded-lg font-semibold transition-all" style="background: linear-gradient(135deg, #E8C547 0%, #D4AF37 100%); color: #1a0b2e;">Contact Us</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://www.starworkforce.net" class="text-gray-700 hover:text-purple-700">Home</a>
+                    <a href="https://www.starworkforce.net/about.html" class="text-gray-700 hover:text-purple-700">About</a>
+                    <a href="https://www.starworkforce.net/services.html" class="text-gray-700 hover:text-purple-700">Services</a>
+                    <a href="/jobs.html" class="text-purple-700 font-semibold">Jobs</a>
+                    <a href="https://www.starworkforce.net/contact.html" class="text-gray-700 hover:text-purple-700">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section style="background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 100%);" class="py-20">
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-5xl font-bold text-white mb-6">Find Your Next Opportunity</h1>
-            <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                Browse exclusive IT job openings with top companies. Contract, contract-to-hire, and permanent positions available.
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Join Our Global IT Team</h1>
+            <p class="text-xl text-purple-50 max-w-3xl mx-auto mb-8">
+                150+ professionals across 4 offices. Onsite, onshore, nearshore, and offshore opportunities available.
             </p>
-            <a href="https://www.starworkforcesolutions.com" class="inline-block px-10 py-4 rounded-lg font-bold text-lg transition-all shadow-xl hover:scale-105" style="background: linear-gradient(135deg, #E8C547 0%, #D4AF37 100%); color: #1a0b2e;">
-                Access Career Accel Platform →
-            </a>
+            <div class="flex justify-center items-center space-x-4 text-purple-100">
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                    </svg>
+                    <span>Remote Options</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+                    </svg>
+                    <span>Competitive Pay</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                    </svg>
+                    <span>Global Teams</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Coming Soon -->
-    <section class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="bg-gradient-to-br from-purple-50 to-yellow-50 rounded-xl p-12">
-                <svg class="w-20 h-20 mx-auto mb-6" style="color: #7C3AED;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Job Board Coming Soon</h2>
-                <p class="text-xl text-gray-700 mb-8">
-                    We're building a comprehensive job board with AI-powered matching. In the meantime, access exclusive opportunities through our Career Accel platform.
+    <!-- Search and Filter Section -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Search Bar -->
+            <div class="mb-6">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        placeholder="Search by job title, skills, or location..."
+                        class="w-full px-6 py-4 pr-12 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent text-lg"
+                    >
+                    <svg class="absolute right-4 top-4 w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Filter Tags -->
+            <div class="flex flex-wrap gap-3">
+                <button class="filter-tag active px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm" data-filter="all">
+                    All Jobs
+                </button>
+                <button class="filter-tag px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm" data-filter="remote">
+                    🌐 Remote
+                </button>
+                <button class="filter-tag px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm" data-filter="onsite">
+                    🏢 Onsite
+                </button>
+                <button class="filter-tag px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm" data-filter="engineering">
+                    💻 Engineering
+                </button>
+                <button class="filter-tag px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm" data-filter="ai-ml">
+                    🤖 AI/ML
+                </button>
+                <button class="filter-tag px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm" data-filter="devops">
+                    ⚙️ DevOps
+                </button>
+                <button class="filter-tag px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm" data-filter="qa">
+                    ✅ QA/Testing
+                </button>
+                <button class="filter-tag px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm" data-filter="data">
+                    📊 Data Science
+                </button>
+            </div>
+
+            <!-- Results Count -->
+            <div class="mt-4">
+                <p class="text-gray-600">
+                    Showing <span id="resultsCount" class="font-semibold text-purple-700">0</span> opportunities
                 </p>
-                <div class="max-w-md mx-auto mb-8">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Get Notified of New Jobs:</h3>
-                    <form class="flex gap-2">
-                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
-                        <button type="submit" class="px-6 py-3 rounded-lg font-bold text-white" style="background: linear-gradient(135deg, #7C3AED 0%, #E8C547 100%);">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-                <a href="https://www.starworkforcesolutions.com" class="inline-block px-8 py-3 rounded-lg font-bold transition-all" style="background-color: #1a0b2e; color: #E8C547;">
-                    Visit Career Accel Now →
-                </a>
-            </div>
-
-            <!-- Featured Roles Preview -->
-            <div class="mt-16">
-                <h3 class="text-2xl font-bold text-gray-900 mb-8">Roles We Typically Place:</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-white rounded-lg p-6 shadow border-l-4" style="border-color: #7C3AED;">
-                        <h4 class="font-bold text-gray-900 mb-2">Software Engineer</h4>
-                        <p class="text-sm text-gray-600 mb-2">Full-stack, Backend, Frontend</p>
-                        <p class="text-sm font-semibold" style="color: #7C3AED;">$100K - $180K</p>
-                    </div>
-                    <div class="bg-white rounded-lg p-6 shadow border-l-4" style="border-color: #7C3AED;">
-                        <h4 class="font-bold text-gray-900 mb-2">Cloud Architect</h4>
-                        <p class="text-sm text-gray-600 mb-2">AWS, Azure, GCP certified</p>
-                        <p class="text-sm font-semibold" style="color: #7C3AED;">$130K - $200K</p>
-                    </div>
-                    <div class="bg-white rounded-lg p-6 shadow border-l-4" style="border-color: #7C3AED;">
-                        <h4 class="font-bold text-gray-900 mb-2">DevOps Engineer</h4>
-                        <p class="text-sm text-gray-600 mb-2">CI/CD, Kubernetes, Docker</p>
-                        <p class="text-sm font-semibold" style="color: #7C3AED;">$110K - $170K</p>
-                    </div>
-                    <div class="bg-white rounded-lg p-6 shadow border-l-4" style="border-color: #E8C547;">
-                        <h4 class="font-bold text-gray-900 mb-2">Data Scientist</h4>
-                        <p class="text-sm text-gray-600 mb-2">ML, AI, Analytics</p>
-                        <p class="text-sm font-semibold" style="color: #E8C547;">$120K - $190K</p>
-                    </div>
-                    <div class="bg-white rounded-lg p-6 shadow border-l-4" style="border-color: #E8C547;">
-                        <h4 class="font-bold text-gray-900 mb-2">Cybersecurity</h4>
-                        <p class="text-sm text-gray-600 mb-2">Security analysts, pen testers</p>
-                        <p class="text-sm font-semibold" style="color: #E8C547;">$110K - $180K</p>
-                    </div>
-                    <div class="bg-white rounded-lg p-6 shadow border-l-4" style="border-color: #E8C547;">
-                        <h4 class="font-bold text-gray-900 mb-2">Product Manager</h4>
-                        <p class="text-sm text-gray-600 mb-2">Technical PM, Product Owner</p>
-                        <p class="text-sm font-semibold" style="color: #E8C547;">$120K - $180K</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="py-20" style="background: linear-gradient(135deg, #E8C547 0%, #D4AF37 100%);">
+    <!-- Jobs Listing -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div id="jobsContainer" class="space-y-4">
+                <!-- Jobs will be dynamically inserted here -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="hidden text-center py-12">
+                <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">No jobs found</h3>
+                <p class="text-gray-600">Try adjusting your search or filters</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-purple-700 to-yellow-500 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-6" style="color: #1a0b2e;">Don't Wait for the Job Board</h2>
-            <p class="text-xl mb-8" style="color: #1a0b2e;">
-                Get started with Career Accel today for immediate access to exclusive opportunities and personalized job matching.
+            <h2 class="text-3xl font-bold mb-4">Don't See the Right Fit?</h2>
+            <p class="text-xl text-purple-50 mb-8">
+                Send us your resume and we'll notify you when relevant positions open up.
             </p>
-            <a href="https://www.starworkforcesolutions.com" class="inline-block px-12 py-5 rounded-lg font-bold text-xl transition-all shadow-xl hover:scale-105" style="background-color: #1a0b2e; color: #E8C547;">
-                Join Career Accel Free →
+            <a href="https://www.careerbuilder.com/advertise/startekk" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-block bg-white text-purple-700 font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors">
+                Submit General Application
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background-color: #1a0b2e;" class="text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-gray-400">&copy; 2025 Star Workforce Solutions. All rights reserved.</p>
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.starworkforce.net/about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="/jobs.html" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="https://www.starworkforce.net/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.starworkforce.net/services.html" class="hover:text-white transition-colors">IT Staffing</a></li>
+                        <li><a href="https://www.starworkforce.net/services.html" class="hover:text-white transition-colors">Consulting</a></li>
+                        <li><a href="https://www.starworkforce.net/services.html" class="hover:text-white transition-colors">Managed Teams</a></li>
+                        <li><a href="https://startekk.net" class="hover:text-white transition-colors">StartTekk →</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.starworkforce.net/blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="https://startekk.net/case-studies.html" class="hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="https://startekk.net/cost-calculator.html" class="hover:text-white transition-colors">Cost Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://startekk.net/legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="https://startekk.net/legal/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="https://startekk.net/legal/accessibility.html" class="hover:text-white transition-colors">Accessibility</a></li>
+                        <li><a href="https://startekk.net/legal/fraud-alert.html" class="hover:text-white transition-colors">Fraud Alert</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
+                <p>&copy; 2024 StarWorkforce. All rights reserved.</p>
+                <p class="mt-2">5465 Legacy Drive Suite 650, Plano, TX 75024 | (469) 713-3993</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Sample job data - in production, this would come from an API or database
+        const jobs = [
+            {
+                id: 1,
+                title: "Senior Software Engineer",
+                location: "Remote (USA)",
+                type: "Full-time",
+                category: "engineering",
+                tags: ["remote", "engineering"],
+                experience: "5+ years",
+                skills: ["JavaScript", "React", "Node.js", "AWS"],
+                description: "Join our team building scalable cloud applications. Work with modern tech stack and agile methodologies.",
+                salary: "$120,000 - $160,000",
+                posted: "2 days ago"
+            },
+            {
+                id: 2,
+                title: "AI/ML Engineer",
+                location: "Plano, TX / Remote",
+                type: "Full-time",
+                category: "ai-ml",
+                tags: ["remote", "onsite", "ai-ml"],
+                experience: "3+ years",
+                skills: ["Python", "TensorFlow", "PyTorch", "NLP"],
+                description: "Build cutting-edge AI solutions for enterprise clients. Work on natural language processing and computer vision projects.",
+                salary: "$130,000 - $180,000",
+                posted: "1 week ago"
+            },
+            {
+                id: 3,
+                title: "DevOps Engineer",
+                location: "Remote (Global)",
+                type: "Full-time",
+                category: "devops",
+                tags: ["remote", "devops"],
+                experience: "4+ years",
+                skills: ["AWS", "Docker", "Kubernetes", "Terraform"],
+                description: "Manage cloud infrastructure and CI/CD pipelines. Work with Fortune 500 clients on mission-critical systems.",
+                salary: "$110,000 - $150,000",
+                posted: "3 days ago"
+            },
+            {
+                id: 4,
+                title: "QA Automation Engineer",
+                location: "Nearshore (Mexico)",
+                type: "Full-time",
+                category: "qa",
+                tags: ["qa", "remote"],
+                experience: "3+ years",
+                skills: ["Selenium", "Jest", "Python", "CI/CD"],
+                description: "Build automated testing frameworks. Ensure quality across web and mobile applications.",
+                salary: "$70,000 - $95,000",
+                posted: "5 days ago"
+            },
+            {
+                id: 5,
+                title: "Data Scientist",
+                location: "Remote (USA/Canada)",
+                type: "Full-time",
+                category: "data",
+                tags: ["remote", "data"],
+                experience: "4+ years",
+                skills: ["Python", "R", "SQL", "Machine Learning"],
+                description: "Analyze complex datasets and build predictive models. Work on business intelligence and data visualization projects.",
+                salary: "$115,000 - $155,000",
+                posted: "1 week ago"
+            },
+            {
+                id: 6,
+                title: "Full Stack Developer",
+                location: "Plano, TX (Onsite)",
+                type: "Full-time",
+                category: "engineering",
+                tags: ["onsite", "engineering"],
+                experience: "3+ years",
+                skills: ["React", "Node.js", "PostgreSQL", "GraphQL"],
+                description: "Build web applications from front to back. Work directly with clients at our Plano office.",
+                salary: "$100,000 - $140,000",
+                posted: "4 days ago"
+            },
+            {
+                id: 7,
+                title: "Machine Learning Engineer",
+                location: "Remote (Offshore - India)",
+                type: "Full-time",
+                category: "ai-ml",
+                tags: ["remote", "ai-ml"],
+                experience: "2+ years",
+                skills: ["Python", "Scikit-learn", "Deep Learning", "Cloud"],
+                description: "Develop ML models and deploy to production. Work with international teams on AI projects.",
+                salary: "$45,000 - $65,000",
+                posted: "2 weeks ago"
+            },
+            {
+                id: 8,
+                title: "Site Reliability Engineer",
+                location: "Remote (USA)",
+                type: "Full-time",
+                category: "devops",
+                tags: ["remote", "devops"],
+                experience: "5+ years",
+                skills: ["Linux", "Monitoring", "Automation", "AWS/GCP"],
+                description: "Ensure system reliability and performance. On-call rotation with competitive compensation.",
+                salary: "$125,000 - $165,000",
+                posted: "1 day ago"
+            }
+        ];
+
+        let filteredJobs = [...jobs];
+
+        // Display jobs
+        function displayJobs(jobsToDisplay) {
+            const container = document.getElementById('jobsContainer');
+            const noResults = document.getElementById('noResults');
+            const resultsCount = document.getElementById('resultsCount');
+
+            if (jobsToDisplay.length === 0) {
+                container.innerHTML = '';
+                noResults.classList.remove('hidden');
+                resultsCount.textContent = '0';
+                return;
+            }
+
+            noResults.classList.add('hidden');
+            resultsCount.textContent = jobsToDisplay.length;
+
+            container.innerHTML = jobsToDisplay.map(job => `
+                <div class="job-card bg-white rounded-lg shadow-md p-6 hover:shadow-xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">${job.title}</h3>
+                            <div class="flex flex-wrap gap-2 mb-2">
+                                <span class="flex items-center text-gray-600 text-sm">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    ${job.location}
+                                </span>
+                                <span class="flex items-center text-gray-600 text-sm">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    ${job.posted}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-purple-700 font-bold text-lg">${job.salary}</p>
+                            <p class="text-gray-500 text-sm">${job.type}</p>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">${job.description}</p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        ${job.skills.map(skill => `
+                            <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
+                                ${skill}
+                            </span>
+                        `).join('')}
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600 text-sm">
+                            <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                            </svg>
+                            ${job.experience} required
+                        </span>
+                        <a href="https://www.careerbuilder.com/advertise/startekk" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="bg-purple-700 text-white px-6 py-2 rounded-lg hover:bg-purple-800 transition-colors font-medium">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter functionality
+        const filterTags = document.querySelectorAll('.filter-tag');
+        const searchInput = document.getElementById('searchInput');
+        let currentFilter = 'all';
+
+        filterTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Update active state
+                filterTags.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                currentFilter = this.dataset.filter;
+                applyFilters();
+            });
+        });
+
+        searchInput.addEventListener('input', function() {
+            applyFilters();
+        });
+
+        function applyFilters() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            
+            filteredJobs = jobs.filter(job => {
+                // Filter by category
+                const matchesFilter = currentFilter === 'all' || job.tags.includes(currentFilter);
+                
+                // Filter by search term
+                const matchesSearch = !searchTerm || 
+                    job.title.toLowerCase().includes(searchTerm) ||
+                    job.location.toLowerCase().includes(searchTerm) ||
+                    job.skills.some(skill => skill.toLowerCase().includes(searchTerm)) ||
+                    job.description.toLowerCase().includes(searchTerm);
+                
+                return matchesFilter && matchesSearch;
+            });
+
+            displayJobs(filteredJobs);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            displayJobs(jobs);
+        });
+
+        // Track job view in Google Analytics
+        function trackJobView(jobId) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'view_job', {
+                    'event_category': 'jobs',
+                    'job_id': jobId
+                });
+            }
+        }
+    </script>
+
 </body>
 </html>
