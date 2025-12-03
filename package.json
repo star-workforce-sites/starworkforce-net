@@ -1,0 +1,9 @@
+{
+  "name": "starworkforce-contact-form",
+  "version": "1.0.0",
+  "description": "Contact form with Gmail SMTP integration",
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  },
+  "type": "module"
+}

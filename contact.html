@@ -3,68 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | STAR Workforce Services</title>
+    <title>Contact Us - STAR Workforce Services | IT Staffing Inquiry</title>
+    <meta name="description" content="Contact STAR Workforce for IT staffing, consulting, and managed team inquiries. Get a response within 24 hours. Phone: (469) 713-3993">
+    <meta name="keywords" content="contact IT staffing, consulting inquiry, managed teams quote, offshore development contact, IT recruitment consultation">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3QGRJGB6M"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3QGRJGB6M');</script>
+    <style>
+        .btn-primary {
+            background: #E8C547;
+            color: #1a0b2e;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #f4d563;
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(232, 197, 71, 0.3);
+        }
+        .btn-secondary {
+            background: white;
+            color: #1a0b2e;
+            font-weight: 700;
+            border: 2px solid #E8C547;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: #f9fafb;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a0b2e 0%, #2a1540 50%, #1a0b2e 100%);
+        }
+    </style>
 </head>
 <body class="font-sans bg-gray-50">
+
 <nav class="bg-[#1a0b2e] text-white sticky top-0 z-50 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
-            <a href="/" class="flex items-center space-x-3 hover:opacity-90 transition-opacity">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-700 to-yellow-500 flex items-center justify-center flex-shrink-0">
+            <a href="/" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-700 to-yellow-500 flex items-center justify-center">
                     <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                     </svg>
                 </div>
                 <div>
-                    <span class="text-xl font-bold text-white">STAR Workforce</span>
-                    <span class="block text-xs text-[#E8C547] font-normal leading-tight">Services</span>
+                    <span class="text-xl font-bold">STAR Workforce</span>
+                    <span class="block text-xs text-[#E8C547] leading-tight">Services</span>
                 </div>
             </a>
             <div class="hidden md:flex items-center space-x-6">
-                <a href="/" class="hover:text-[#E8C547] transition-colors">Home</a>
-                <a href="/about.html" class="hover:text-[#E8C547] transition-colors">About</a>
-                <a href="/services.html" class="hover:text-[#E8C547] transition-colors">Services</a>
-                <a href="/benefits.html" class="hover:text-[#E8C547] transition-colors">Benefits</a>
-                <a href="/pages/jobs" class="hover:text-[#E8C547] transition-colors">Jobs</a>
-                <a href="/contact.html" class="bg-gradient-to-r from-purple-700 to-yellow-500 px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">Contact Us</a>
+                <a href="/" class="hover:text-[#E8C547]">Home</a>
+                <a href="/about.html" class="hover:text-[#E8C547]">About</a>
+                <a href="/services.html" class="hover:text-[#E8C547]">Services</a>
+                <a href="/benefits.html" class="hover:text-[#E8C547]">Benefits</a>
+                <a href="/pages/jobs" class="hover:text-[#E8C547]">Jobs</a>
+                <a href="/contact.html" class="btn-primary px-6 py-2 rounded-lg">Contact</a>
             </div>
-            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-purple-900 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-purple-900">
-        <div class="px-4 py-4 space-y-3">
-            <a href="/" class="block py-2 hover:text-[#E8C547] transition-colors">Home</a>
-            <a href="/about.html" class="block py-2 hover:text-[#E8C547] transition-colors">About</a>
-            <a href="/services.html" class="block py-2 hover:text-[#E8C547] transition-colors">Services</a>
-            <a href="/benefits.html" class="block py-2 hover:text-[#E8C547] transition-colors">Benefits</a>
-            <a href="/pages/jobs" class="block py-2 hover:text-[#E8C547] transition-colors">Jobs</a>
-            <a href="/contact.html" class="block py-2 text-[#E8C547] font-semibold">Contact Us</a>
         </div>
     </div>
 </nav>
 
-<section class="bg-gradient-to-br from-[#1a0b2e] via-purple-900 to-[#1a0b2e] text-white py-20"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><h1 class="text-4xl md:text-6xl font-bold mb-6">Get In Touch</h1><p class="text-xl md:text-2xl text-gray-200 mb-8">Let's discuss your staffing needs</p></div></section>
-<section class="py-20"><div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8"><div class="bg-white p-8 rounded-2xl shadow-lg"><h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2><div class="space-y-4 text-lg"><p><strong>Phone:</strong> <a href="tel:+14697133993" class="text-purple-600 hover:text-purple-800">(469) 713-3993</a></p><p><strong>Address:</strong><br>5465 Legacy Drive Suite 650<br>Plano, TX 75024</p><p><strong>Locations:</strong><br>Bangalore, Mysore & Hyderabad, India<br>Montreal, Quebec, Canada<br>Sydney & Perth, Australia</p></div><div class="mt-8"><a href="https://startekk.net/cost-calculator.html" target="_blank" class="bg-gradient-to-r from-purple-700 to-yellow-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-opacity inline-block">Calculate Your Savings</a></div></div></div></section>
+<section class="hero-gradient text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Get In Touch</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">We respond to all inquiries within 24 hours</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12">
+            
+            <!-- Contact Form -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#1a0b2e] mb-6">Send Us a Message</h2>
+                
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Name <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent"
+                                   placeholder="Your full name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Email <span class="text-red-500">*</span>
+                            </label>
+                            <input type="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent"
+                                   placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
+                            <input type="tel" name="phone" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent"
+                                   placeholder="(555) 123-4567">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Company</label>
+                            <input type="text" name="company" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent"
+                                   placeholder="Your company name">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            Reason for Contact <span class="text-red-500">*</span>
+                        </label>
+                        <select name="reason" required 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent">
+                            <option value="">Select a reason...</option>
+                            <option value="IT Staffing Inquiry">IT Staffing Inquiry</option>
+                            <option value="Managed Teams">Managed Teams</option>
+                            <option value="IT Consulting Services">IT Consulting Services</option>
+                            <option value="Cost Calculator / Quote Request">Cost Calculator / Quote Request</option>
+                            <option value="Job Application / Candidate">Job Application / Candidate</option>
+                            <option value="Partnership Opportunity">Partnership Opportunity</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Technical Support">Technical Support</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            Message <span class="text-red-500">*</span>
+                        </label>
+                        <textarea name="message" required rows="6"
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent"
+                                  placeholder="Tell us about your needs..."></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn"
+                            class="btn-primary w-full px-8 py-4 rounded-lg text-lg">
+                        Send Message
+                    </button>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="hidden bg-green-50 border border-green-200 text-green-800 px-6 py-4 rounded-lg">
+                        <p class="font-semibold">✅ Thank you! Your message has been sent successfully.</p>
+                        <p class="text-sm mt-1">We'll respond within 24 hours.</p>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="errorMessage" class="hidden bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-lg">
+                        <p class="font-semibold">⚠️ Oops! There was a problem sending your message.</p>
+                        <p class="text-sm mt-1">Please try again or email us directly at <a href="/cdn-cgi/l/email-protection#f1989f979eb182859083869e839a979e839294df9f9485" class="underline"><span class="__cf_email__" data-cfemail="264f48404966555247545149544d404954454308484352">[email&#160;protected]</span></a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h2 class="text-3xl font-bold text-[#1a0b2e] mb-6">Contact Information</h2>
+                
+                <div class="space-y-6 mb-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-[#E8C547] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-[#1a0b2e]" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[#1a0b2e]">Email</h3>
+                            <a href="/cdn-cgi/l/email-protection#94fdfaf2fbd4e7e0f5e6e3fbe6fff2fbe6f7f1bafaf1e0" class="text-gray-700 hover:text-[#E8C547]"><span class="__cf_email__" data-cfemail="335a5d555c7340475241445c4158555c4150561d5d5647">[email&#160;protected]</span></a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-[#E8C547] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-[#1a0b2e]" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[#1a0b2e]">Phone</h3>
+                            <a href="tel:+14697133993" class="text-gray-700 hover:text-[#E8C547]">(469) 713-3993</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-[#E8C547] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-[#1a0b2e]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[#1a0b2e]">Headquarters</h3>
+                            <p class="text-gray-700">5465 Legacy Drive Suite 650<br>Plano, TX 75024<br>United States</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-[#E8C547] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-[#1a0b2e]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[#1a0b2e]">Business Hours</h3>
+                            <p class="text-gray-700">Monday - Friday: 9:00 AM - 6:00 PM CST<br>Saturday: By Appointment<br>Sunday: Closed</p>
+                            <p class="text-sm text-[#E8C547] mt-1">24/7 support for managed team clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-yellow-50 p-6 rounded-lg border-2 border-[#E8C547]">
+                    <h3 class="font-bold text-[#1a0b2e] mb-4">Global Offices</h3>
+                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-700">
+                        <div>
+                            <p class="font-semibold">🇮🇳 India</p>
+                            <p class="text-xs">Bangalore<br>Mysore<br>Hyderabad</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">🇨🇦 Canada</p>
+                            <p class="text-xs">Montreal</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">🇦🇺 Australia</p>
+                            <p class="text-xs">Sydney<br>Perth</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">🇺🇸 USA</p>
+                            <p class="text-xs">Plano, TX (HQ)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex gap-4">
+                    <a href="https://startekk.net/cost-calculator.html" target="_blank" class="btn-secondary px-6 py-3 rounded-lg text-center flex-1">
+                        Calculate Savings
+                    </a>
+                    <a href="/pages/jobs" class="btn-secondary px-6 py-3 rounded-lg text-center flex-1">
+                        Browse 238+ Jobs
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <footer class="bg-gray-900 text-gray-300 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div><h3 class="text-white font-semibold mb-4 text-lg">Company</h3><ul class="space-y-2"><li><a href="/about.html" class="hover:text-[#E8C547] transition-colors">About Us</a></li><li><a href="/pages/jobs" class="hover:text-[#E8C547] transition-colors">Careers</a></li><li><a href="/contact.html" class="hover:text-[#E8C547] transition-colors">Contact</a></li><li><a href="/blog.html" class="hover:text-[#E8C547] transition-colors">Blog</a></li></ul></div>
-            <div><h3 class="text-white font-semibold mb-4 text-lg">Services</h3><ul class="space-y-2"><li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">IT Staffing</a></li><li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">IT Consulting</a></li><li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">Managed Teams</a></li><li><a href="/benefits.html" class="hover:text-[#E8C547] transition-colors">Why Choose Us</a></li></ul></div>
-            <div><h3 class="text-white font-semibold mb-4 text-lg">Resources</h3><ul class="space-y-2"><li><a href="https://startekk.net/case-studies.html" target="_blank" class="hover:text-[#E8C547] transition-colors">Case Studies</a></li><li><a href="https://startekk.net/cost-calculator.html" target="_blank" class="hover:text-[#E8C547] transition-colors">Cost Calculator</a></li><li><a href="https://startekk.net/products.html" target="_blank" class="hover:text-[#E8C547] transition-colors">StartTekk Products</a></li></ul></div>
-            <div><h3 class="text-white font-semibold mb-4 text-lg">Legal</h3><ul class="space-y-2"><li><a href="/legal/privacy-policy.html" class="hover:text-[#E8C547] transition-colors">Privacy Policy</a></li><li><a href="/legal/terms-of-service.html" class="hover:text-[#E8C547] transition-colors">Terms of Service</a></li><li><a href="/legal/cookie-policy.html" class="hover:text-[#E8C547] transition-colors">Cookie Policy</a></li><li><a href="/legal/accessibility.html" class="hover:text-[#E8C547] transition-colors">Accessibility</a></li></ul></div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Company</h3>
+                <ul class="space-y-2">
+                    <li><a href="/about.html" class="hover:text-[#E8C547]">About</a></li>
+                    <li><a href="/pages/jobs" class="hover:text-[#E8C547]">Careers</a></li>
+                    <li><a href="/contact.html" class="hover:text-[#E8C547]">Contact</a></li>
+                    <li><a href="/blog.html" class="hover:text-[#E8C547]">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="/services.html" class="hover:text-[#E8C547]">IT Staffing</a></li>
+                    <li><a href="/services.html" class="hover:text-[#E8C547]">IT Consulting</a></li>
+                    <li><a href="/services.html" class="hover:text-[#E8C547]">Managed Teams</a></li>
+                    <li><a href="/benefits.html" class="hover:text-[#E8C547]">Benefits</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Resources</h3>
+                <ul class="space-y-2">
+                    <li><a href="https://startekk.net/case-studies.html" target="_blank" class="hover:text-[#E8C547]">Case Studies</a></li>
+                    <li><a href="https://startekk.net/cost-calculator.html" target="_blank" class="hover:text-[#E8C547]">Cost Calculator</a></li>
+                    <li><a href="https://startekk.net" target="_blank" class="hover:text-[#E8C547]">StartTekk Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Legal</h3>
+                <ul class="space-y-2">
+                    <li><a href="/legal/privacy-policy.html" class="hover:text-[#E8C547]">Privacy</a></li>
+                    <li><a href="/legal/terms-of-service.html" class="hover:text-[#E8C547]">Terms</a></li>
+                    <li><a href="/legal/cookie-policy.html" class="hover:text-[#E8C547]">Cookies</a></li>
+                    <li><a href="/legal/accessibility.html" class="hover:text-[#E8C547]">Accessibility</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-8"><div class="text-sm text-center text-gray-400"><p class="mb-2">&copy; 2024 STAR Workforce Services, LLC. All rights reserved.</p><p class="mb-2">HQ: Plano, TX, USA | Locations: <span class="text-gray-300">Bangalore, Mysore & Hyderabad, India</span> • <span class="text-gray-300">Montreal, Quebec, Canada</span> • <span class="text-gray-300">Sydney & Perth, Australia</span></p><p class="mt-2"><a href="tel:+14697133993" class="hover:text-[#E8C547] transition-colors">(469) 713-3993</a> | 5465 Legacy Drive Suite 650, Plano, TX 75024</p></div></div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+            <p>&copy; 2024 STAR Workforce Services, LLC. All rights reserved.</p>
+            <p class="mt-2">HQ: Plano, TX | Global Offices: India, Canada, Australia</p>
+            <p class="mt-2">(469) 713-3993 | 5465 Legacy Drive Suite 650, Plano, TX 75024</p>
+        </div>
     </div>
 </footer>
-<script>document.addEventListener('DOMContentLoaded',function(){const menuBtn=document.getElementById('mobile-menu-btn');const mobileMenu=document.getElementById('mobile-menu');if(menuBtn&&mobileMenu){menuBtn.addEventListener('click',function(){mobileMenu.classList.toggle('hidden');});}});</script>
-</body>
-</html>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const submitBtn = document.getElementById('submitBtn');
+    const successMsg = document.getElementById('successMessage');
+    const errorMsg = document.getElementById('errorMessage');
+    
+    // Hide previous messages
+    successMsg.classList.add('hidden');
+    errorMsg.classList.add('hidden');
+    
+    // Disable button and show loading
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    
+    try {
+        // Collect form data
+        const formData = {
+            name: form.name.value,
+            email: form.email.value,
+            phone: form.phone.value || '',
+            company: form.company.value || '',
+            reason: form.reason.value,
+            message: form.message.value
+        };
+        
+        // Send to API
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+            // Success
+            successMsg.classList.remove('hidden');
+            form.reset();
+            
+            // Track in Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submission', {
+                    'event_category': 'Contact',
+                    'event_label': formData.reason
+                });
+            }
+            
+            // Scroll to success message
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+            // Error
+            errorMsg.classList.remove('hidden');
+            errorMsg.scrollIntoView({ behavior: 'smooth', block: 'cen
