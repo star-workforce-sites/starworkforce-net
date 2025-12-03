@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Opportunities | StartTekk</title>
+    <meta name="description" content="Explore investment opportunities in StartTekk's AI-powered products and solutions.">
+    <meta http-equiv="refresh" content="3;url=https://startekk.net/products.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-purple-800 to-gray-900 min-h-screen">
+    
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="max-w-3xl w-full">
+            
+            <!-- Card -->
+            <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 text-center">
+                
+                <!-- Logo -->
+                <div class="mb-8 flex justify-center">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-emerald-600 to-lime-500 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Heading -->
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-lime-500 bg-clip-text text-transparent">
+                    Investment Opportunities
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Explore our AI-powered products and investment opportunities at StartTekk, our parent company specializing in cloud automation, AI solutions, and enterprise software.
+                </p>
+                
+                <!-- Products Preview -->
+                <div class="grid md:grid-cols-3 gap-4 mb-8 text-left">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-emerald-700 mb-2">Star AI Cloud</h3>
+                        <p class="text-sm text-gray-600">Cloud automation platform</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-emerald-700 mb-2">Star AI eDiscovery</h3>
+                        <p class="text-sm text-gray-600">Legal document intelligence</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-emerald-700 mb-2">Star AI Finance</h3>
+                        <p class="text-sm text-gray-600">Financial automation</p>
+                    </div>
+                </div>
+                
+                <!-- CTA -->
+                <a href="https://startekk.net/products.html" class="inline-block bg-gradient-to-r from-emerald-600 to-lime-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all transform hover:scale-105">
+                    View All Products & Investment Opportunities →
+                </a>
+                
+                <!-- Auto-redirect notice -->
+                <p class="mt-8 text-sm text-gray-400">
+                    Redirecting automatically in <span id="countdown">3</span> seconds...
+                </p>
+                
+            </div>
+            
+            <!-- Back link -->
+            <div class="text-center mt-8">
+                <a href="/" class="text-purple-200 hover:text-white transition-colors">
+                    ← Back to STAR Workforce
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script>
+        // Countdown timer
+        let seconds = 3;
+        const countdownEl = document.getElementById('countdown');
+        
+        const interval = setInterval(() => {
+            seconds--;
+            if (countdownEl) {
+                countdownEl.textContent = seconds;
+            }
+            if (seconds <= 0) {
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
+    
+</body>
+</html>
