@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite IT Staffing & Consulting | STAR Workforce Services</title>
+    <title>Save 30-52% on Development Costs | STAR Workforce Services</title>
+    <meta name="description" content="Build elite tech teams in 1-2 weeks with pre-vetted developers. Save 30-52% on development costs with our global IT staffing solutions. 238+ roles available now.">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3QGRJGB6M"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W3QGRJGB6M');</script>
+    <style>
+        /* Custom styles - NO GRADIENTS on buttons */
+        .btn-primary {
+            background: #E8C547;
+            color: #1a0b2e;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #f4d563;
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(232, 197, 71, 0.3);
+        }
+        .btn-secondary {
+            background: white;
+            color: #1a0b2e;
+            font-weight: 700;
+            border: 2px solid #E8C547;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: #f9fafb;
+            border-color: #f4d563;
+        }
+        /* Subtle background gradient - OK for backgrounds, NOT buttons */
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a0b2e 0%, #2a1540 50%, #1a0b2e 100%);
+        }
+    </style>
 </head>
 <body class="font-sans bg-gray-50">
+
+<!-- Navigation -->
 <nav class="bg-[#1a0b2e] text-white sticky top-0 z-50 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
@@ -30,7 +62,7 @@
                 <a href="/services.html" class="hover:text-[#E8C547] transition-colors">Services</a>
                 <a href="/benefits.html" class="hover:text-[#E8C547] transition-colors">Benefits</a>
                 <a href="/pages/jobs" class="hover:text-[#E8C547] transition-colors">Jobs</a>
-                <a href="/contact.html" class="bg-gradient-to-r from-purple-700 to-yellow-500 px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">Contact Us</a>
+                <a href="/contact.html" class="btn-primary px-6 py-2 rounded-lg inline-block">Contact Us</a>
             </div>
             <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-purple-900 transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,7 +73,7 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden bg-purple-900">
         <div class="px-4 py-4 space-y-3">
-            <a href="/" class="block py-2 hover:text-[#E8C547] transition-colors">Home</a>
+            <a href="/" class="block py-2 text-[#E8C547] font-semibold">Home</a>
             <a href="/about.html" class="block py-2 hover:text-[#E8C547] transition-colors">About</a>
             <a href="/services.html" class="block py-2 hover:text-[#E8C547] transition-colors">Services</a>
             <a href="/benefits.html" class="block py-2 hover:text-[#E8C547] transition-colors">Benefits</a>
@@ -51,20 +83,334 @@
     </div>
 </nav>
 
-<section class="bg-gradient-to-br from-[#1a0b2e] via-purple-900 to-[#1a0b2e] text-white py-20"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><h1 class="text-4xl md:text-6xl font-bold mb-6">Elite IT Staffing & Consulting</h1><p class="text-xl md:text-2xl text-gray-200 mb-8">Build world-class tech teams with 30-52% cost savings</p><div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="https://startekk.net/cost-calculator.html" target="_blank" class="bg-gradient-to-r from-purple-700 to-yellow-500 px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-opacity inline-block">Calculate Savings</a><a href="/contact.html" class="bg-white text-purple-900 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors inline-block">Get Started</a></div></div></section>
-<section class="py-20"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid md:grid-cols-3 gap-8"><div class="bg-white p-8 rounded-2xl shadow-lg"><h3 class="text-2xl font-bold text-gray-900 mb-4">IT Staffing</h3><p class="text-gray-700">Pre-vetted talent placed in 1-2 weeks. 238+ roles available.</p></div><div class="bg-white p-8 rounded-2xl shadow-lg"><h3 class="text-2xl font-bold text-gray-900 mb-4">IT Consulting</h3><p class="text-gray-700">Strategic technology guidance from Fortune 500 experts.</p></div><div class="bg-white p-8 rounded-2xl shadow-lg"><h3 class="text-2xl font-bold text-gray-900 mb-4">Managed Teams</h3><p class="text-gray-700">Dedicated teams with 30-52% cost savings. Fully managed.</p></div></div></div></section>
+<!-- Hero Section - REDESIGNED FOR CONVERSION -->
+<section class="hero-gradient text-white py-20 md:py-28 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Trust Badges - Above the Fold -->
+        <div class="text-center mb-6">
+            <div class="inline-flex flex-wrap justify-center items-center gap-3 md:gap-6 text-[#E8C547] text-xs md:text-sm font-semibold">
+                <span class="flex items-center gap-1">⭐ 150+ Elite Professionals</span>
+                <span class="hidden md:inline">•</span>
+                <span class="flex items-center gap-1">📍 4 Global Offices</span>
+                <span class="hidden md:inline">•</span>
+                <span class="flex items-center gap-1">🎯 238+ Tech Roles</span>
+            </div>
+        </div>
+        
+        <!-- Main Headline - BENEFIT FOCUSED -->
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-6 leading-tight">
+            Save 30-52% on<br>
+            <span class="text-[#E8C547]">Development Costs</span>
+        </h1>
+        
+        <!-- Value Proposition Subhead -->
+        <p class="text-lg md:text-xl lg:text-2xl text-center text-gray-200 mb-8 max-w-3xl mx-auto">
+            Build elite tech teams in 1-2 weeks with pre-vetted senior developers from our global talent network
+        </p>
+        
+        <!-- Stats Showcase - Social Proof -->
+        <div class="flex flex-wrap justify-center gap-6 md:gap-12 mb-10 text-center">
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-[#E8C547]">52%</div>
+                <div class="text-xs md:text-sm text-gray-300">Cost Reduction</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-[#E8C547]">1-2 Weeks</div>
+                <div class="text-xs md:text-sm text-gray-300">Time to Hire</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-[#E8C547]">150+</div>
+                <div class="text-xs md:text-sm text-gray-300">Professionals</div>
+            </div>
+            <div>
+                <div class="text-3xl md:text-4xl font-bold text-[#E8C547]">238+</div>
+                <div class="text-xs md:text-sm text-gray-300">Tech Roles</div>
+            </div>
+        </div>
+        
+        <!-- PRIMARY & SECONDARY CTAs - NO GRADIENTS -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+            <!-- PRIMARY CTA - HUGE SOLID GOLD BUTTON -->
+            <a href="https://startekk.net/cost-calculator.html" 
+               class="btn-primary inline-flex items-center gap-2 px-8 md:px-12 py-4 md:py-5 rounded-xl text-lg md:text-xl shadow-2xl w-full sm:w-auto justify-center">
+                <span class="text-2xl">💰</span>
+                <span>Calculate Your Savings</span>
+                <span class="text-xl">→</span>
+            </a>
+            
+            <!-- SECONDARY CTA - WHITE BUTTON -->
+            <a href="/pages/jobs" 
+               class="btn-secondary inline-flex items-center gap-2 px-8 md:px-12 py-4 md:py-5 rounded-xl text-lg md:text-xl w-full sm:w-auto justify-center">
+                <span>Browse 238 Tech Roles</span>
+            </a>
+        </div>
+        
+        <!-- Objection Handling - Reduce Friction -->
+        <p class="text-center text-xs md:text-sm text-gray-400">
+            <span class="text-green-400">✓</span> Free calculator
+            <span class="mx-2">•</span>
+            <span class="text-green-400">✓</span> See results in 60 seconds
+            <span class="mx-2">•</span>
+            <span class="text-green-400">✓</span> No commitment required
+        </p>
+        
+    </div>
+    
+    <!-- Subtle background decoration -->
+    <div class="absolute top-0 right-0 w-1/3 h-full opacity-5">
+        <svg viewBox="0 0 200 200" class="w-full h-full">
+            <circle cx="100" cy="100" r="80" fill="#E8C547"/>
+        </svg>
+    </div>
+</section>
 
+<!-- Stats Bar - Reinforcement -->
+<section class="bg-white py-12 border-b-2 border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+            <div class="p-4">
+                <div class="text-4xl md:text-5xl font-bold text-[#1a0b2e] mb-2">150+</div>
+                <div class="text-sm md:text-base text-gray-600">Elite Professionals</div>
+            </div>
+            <div class="p-4">
+                <div class="text-4xl md:text-5xl font-bold text-[#1a0b2e] mb-2">238+</div>
+                <div class="text-sm md:text-base text-gray-600">Tech Roles Available</div>
+            </div>
+            <div class="p-4">
+                <div class="text-4xl md:text-5xl font-bold text-[#1a0b2e] mb-2">52%</div>
+                <div class="text-sm md:text-base text-gray-600">Average Cost Savings</div>
+            </div>
+            <div class="p-4">
+                <div class="text-4xl md:text-5xl font-bold text-[#1a0b2e] mb-2">1-2</div>
+                <div class="text-sm md:text-base text-gray-600">Weeks to Hire</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How We Save You Money</h2>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Three proven solutions to reduce your development costs by up to 52%</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+            <!-- IT Staffing -->
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-[#E8C547] rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-[#1a0b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">IT Staffing</h3>
+                <p class="text-gray-700 mb-4">Slash hiring time by 70% with our pre-vetted pool of 238+ senior developers. Average placement: 1-2 weeks vs industry standard 8-12 weeks.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>Pre-vetted candidates placed in 1-2 weeks</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>238+ roles including AI/ML engineers</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>35-52% cost savings vs local hiring</span>
+                    </li>
+                </ul>
+                <a href="/services.html" class="text-[#1a0b2e] font-semibold hover:text-[#E8C547] transition-colors">Learn more →</a>
+            </div>
+            
+            <!-- IT Consulting -->
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-[#E8C547] rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-[#1a0b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">IT Consulting</h3>
+                <p class="text-gray-700 mb-4">Accelerate digital transformation with Fortune 500-vetted architects. AI/ML, cloud migration, automation delivered on time, under budget.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>Strategic technology guidance from experts</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>Digital transformation & cloud migration</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>AI/ML implementation & automation</span>
+                    </li>
+                </ul>
+                <a href="/services.html" class="text-[#1a0b2e] font-semibold hover:text-[#E8C547] transition-colors">Learn more →</a>
+            </div>
+            
+            <!-- Managed Teams -->
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-16 h-16 bg-[#E8C547] rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-[#1a0b2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Managed Teams</h3>
+                <p class="text-gray-700 mb-4">Save 52% on development costs with our offshore/nearshore teams. Same quality, half the price. Flexible scaling, zero hiring overhead.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>Dedicated teams with 30-52% cost savings</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>Fully managed recruitment & onboarding</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-gray-700">
+                        <span class="text-[#E8C547] mt-1">✓</span>
+                        <span>Flexible scaling with 150+ professionals</span>
+                    </li>
+                </ul>
+                <a href="/services.html" class="text-[#1a0b2e] font-semibold hover:text-[#E8C547] transition-colors">Learn more →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Delivery Models -->
+<section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Choose Your Delivery Model</h2>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Flexible options to match your budget and business needs</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200 hover:border-[#E8C547] transition-colors">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Onsite</h3>
+                <p class="text-gray-600 mb-2">Work at your location nationwide</p>
+                <p class="text-2xl font-bold text-[#1a0b2e]">0% Savings</p>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200 hover:border-[#E8C547] transition-colors">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Onshore</h3>
+                <p class="text-gray-600 mb-2">Plano, TX office</p>
+                <p class="text-2xl font-bold text-[#E8C547]">35% Savings</p>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200 hover:border-[#E8C547] transition-colors">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Nearshore</h3>
+                <p class="text-gray-600 mb-2">Montreal, Quebec, Canada</p>
+                <p class="text-2xl font-bold text-[#E8C547]">30% Savings</p>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200 hover:border-[#E8C547] transition-colors">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Offshore</h3>
+                <p class="text-gray-600 mb-2">India & Australia</p>
+                <p class="text-2xl font-bold text-[#E8C547]">52% Savings</p>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200 hover:border-[#E8C547] transition-colors">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Hybrid</h3>
+                <p class="text-gray-600 mb-2">Custom combination</p>
+                <p class="text-2xl font-bold text-[#1a0b2e]">Variable</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="py-16 md:py-20 bg-[#1a0b2e] text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Save 30-52%?</h2>
+        <p class="text-lg md:text-xl text-gray-200 mb-8">Calculate your exact savings in 60 seconds with our free cost calculator</p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <a href="https://startekk.net/cost-calculator.html" 
+               class="btn-primary inline-flex items-center gap-2 px-10 py-5 rounded-xl text-xl justify-center">
+                <span>💰</span>
+                Calculate Your Savings
+                <span>→</span>
+            </a>
+            <a href="/contact.html" 
+               class="btn-secondary inline-flex items-center gap-2 px-10 py-5 rounded-xl text-xl justify-center">
+                Speak to Our Team
+            </a>
+        </div>
+        
+        <p class="text-sm text-gray-400">
+            <span class="text-green-400">✓</span> No sales pressure
+            <span class="mx-2">•</span>
+            <span class="text-green-400">✓</span> Free consultation
+            <span class="mx-2">•</span>
+            <span class="text-green-400">✓</span> Instant results
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
 <footer class="bg-gray-900 text-gray-300 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div><h3 class="text-white font-semibold mb-4 text-lg">Company</h3><ul class="space-y-2"><li><a href="/about.html" class="hover:text-[#E8C547] transition-colors">About Us</a></li><li><a href="/pages/jobs" class="hover:text-[#E8C547] transition-colors">Careers</a></li><li><a href="/contact.html" class="hover:text-[#E8C547] transition-colors">Contact</a></li><li><a href="/blog.html" class="hover:text-[#E8C547] transition-colors">Blog</a></li></ul></div>
-            <div><h3 class="text-white font-semibold mb-4 text-lg">Services</h3><ul class="space-y-2"><li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">IT Staffing</a></li><li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">IT Consulting</a></li><li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">Managed Teams</a></li><li><a href="/benefits.html" class="hover:text-[#E8C547] transition-colors">Why Choose Us</a></li></ul></div>
-            <div><h3 class="text-white font-semibold mb-4 text-lg">Resources</h3><ul class="space-y-2"><li><a href="https://startekk.net/case-studies.html" target="_blank" class="hover:text-[#E8C547] transition-colors">Case Studies</a></li><li><a href="https://startekk.net/cost-calculator.html" target="_blank" class="hover:text-[#E8C547] transition-colors">Cost Calculator</a></li><li><a href="https://startekk.net/products.html" target="_blank" class="hover:text-[#E8C547] transition-colors">StartTekk Products</a></li></ul></div>
-            <div><h3 class="text-white font-semibold mb-4 text-lg">Legal</h3><ul class="space-y-2"><li><a href="/legal/privacy-policy.html" class="hover:text-[#E8C547] transition-colors">Privacy Policy</a></li><li><a href="/legal/terms-of-service.html" class="hover:text-[#E8C547] transition-colors">Terms of Service</a></li><li><a href="/legal/cookie-policy.html" class="hover:text-[#E8C547] transition-colors">Cookie Policy</a></li><li><a href="/legal/accessibility.html" class="hover:text-[#E8C547] transition-colors">Accessibility</a></li></ul></div>
+            <div>
+                <h3 class="text-white font-semibold mb-4 text-lg">Company</h3>
+                <ul class="space-y-2">
+                    <li><a href="/about.html" class="hover:text-[#E8C547] transition-colors">About Us</a></li>
+                    <li><a href="/pages/jobs" class="hover:text-[#E8C547] transition-colors">Careers</a></li>
+                    <li><a href="/contact.html" class="hover:text-[#E8C547] transition-colors">Contact</a></li>
+                    <li><a href="/blog.html" class="hover:text-[#E8C547] transition-colors">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4 text-lg">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">IT Staffing</a></li>
+                    <li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">IT Consulting</a></li>
+                    <li><a href="/services.html" class="hover:text-[#E8C547] transition-colors">Managed Teams</a></li>
+                    <li><a href="/benefits.html" class="hover:text-[#E8C547] transition-colors">Why Choose Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4 text-lg">Resources</h3>
+                <ul class="space-y-2">
+                    <li><a href="https://startekk.net/case-studies.html" target="_blank" class="hover:text-[#E8C547] transition-colors">Case Studies</a></li>
+                    <li><a href="https://startekk.net/cost-calculator.html" target="_blank" class="hover:text-[#E8C547] transition-colors">Cost Calculator</a></li>
+                    <li><a href="https://startekk.net/products.html" target="_blank" class="hover:text-[#E8C547] transition-colors">StartTekk Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4 text-lg">Legal</h3>
+                <ul class="space-y-2">
+                    <li><a href="/legal/privacy-policy.html" class="hover:text-[#E8C547] transition-colors">Privacy Policy</a></li>
+                    <li><a href="/legal/terms-of-service.html" class="hover:text-[#E8C547] transition-colors">Terms of Service</a></li>
+                    <li><a href="/legal/cookie-policy.html" class="hover:text-[#E8C547] transition-colors">Cookie Policy</a></li>
+                    <li><a href="/legal/accessibility.html" class="hover:text-[#E8C547] transition-colors">Accessibility</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-8"><div class="text-sm text-center text-gray-400"><p class="mb-2">&copy; 2024 STAR Workforce Services, LLC. All rights reserved.</p><p class="mb-2">HQ: Plano, TX, USA | Locations: <span class="text-gray-300">Bangalore, Mysore & Hyderabad, India</span> • <span class="text-gray-300">Montreal, Quebec, Canada</span> • <span class="text-gray-300">Sydney & Perth, Australia</span></p><p class="mt-2"><a href="tel:+14697133993" class="hover:text-[#E8C547] transition-colors">(469) 713-3993</a> | 5465 Legacy Drive Suite 650, Plano, TX 75024</p></div></div>
+        <div class="border-t border-gray-800 mt-8 pt-8">
+            <div class="text-sm text-center text-gray-400">
+                <p class="mb-2">&copy; 2024 STAR Workforce Services, LLC. All rights reserved.</p>
+                <p class="mb-2">HQ: Plano, TX, USA | Locations: <span class="text-gray-300">Bangalore, Mysore & Hyderabad, India</span> • <span class="text-gray-300">Montreal, Quebec, Canada</span> • <span class="text-gray-300">Sydney & Perth, Australia</span></p>
+                <p class="mt-2"><a href="tel:+14697133993" class="hover:text-[#E8C547] transition-colors">(469) 713-3993</a> | 5465 Legacy Drive Suite 650, Plano, TX 75024</p>
+            </div>
+        </div>
     </div>
 </footer>
-<script>document.addEventListener('DOMContentLoaded',function(){const menuBtn=document.getElementById('mobile-menu-btn');const mobileMenu=document.getElementById('mobile-menu');if(menuBtn&&mobileMenu){menuBtn.addEventListener('click',function(){mobileMenu.classList.toggle('hidden');});}});</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+});
+</script>
+
 </body>
 </html>
