@@ -297,12 +297,12 @@
             // Determine which GA ID to use based on domain
             if (hostname.includes('startekk')) {
                 GA_ID = GA_IDS.startekk;
-                console.log('🌐 Loading StartTekk Google Analytics: ' + GA_ID);
+                console.log('🌐 Loading Startekk Google Analytics: ' + GA_ID);
             } else if (hostname.includes('starworkforce')) {
                 GA_ID = GA_IDS.starworkforce;
                 console.log('🌐 Loading STAR Workforce Google Analytics: ' + GA_ID);
             } else {
-                // Default to StartTekk for localhost/testing
+                // Default to Startekk for localhost/testing
                 GA_ID = GA_IDS.startekk;
                 console.log('🌐 Loading default Google Analytics (localhost): ' + GA_ID);
             }
@@ -407,7 +407,7 @@ USAGE INSTRUCTIONS:
    - Comply with GDPR (anonymize IP)
 
 3. Google Analytics IDs:
-   - StartTekk.net: G-8BFZG3R9ZR
+   - Startekk.net: G-8BFZG3R9ZR
    - STAR Workforce.net: G-W3QGRJGB6M
 
 4. Console messages help with debugging:
