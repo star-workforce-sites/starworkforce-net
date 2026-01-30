@@ -1,4 +1,5 @@
 {
+  "_comment": "Last updated: 2026-01-29 22:52:53",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
@@ -8,8 +9,13 @@
       "permanent": true
     },
     {
-      "source": "/:path*.html",
-      "destination": "/:path*",
+      "source": "/:page.html",
+      "destination": "/:page",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/",
       "permanent": true
     }
   ],
