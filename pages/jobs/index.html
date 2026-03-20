@@ -214,6 +214,7 @@ const jobs = [
     // ── HEALTHCARE JOBS ──
     {
         id: 'hc-001',
+        slug: 'cardiac-catheterization-technician',
         category: 'healthcare',
         tags: ['healthcare','contract','travel'],
         title: 'Cardiac Catheterization Technician',
@@ -231,6 +232,7 @@ const jobs = [
     },
     {
         id: 'hc-002',
+        slug: 'registered-nurse-icu',
         category: 'healthcare',
         tags: ['healthcare','contract','travel'],
         title: 'Registered Nurse — ICU (Travel)',
@@ -248,6 +250,7 @@ const jobs = [
     },
     {
         id: 'hc-003',
+        slug: 'mental-health-clinician',
         category: 'healthcare',
         tags: ['healthcare','contract'],
         title: 'Mental Health Clinician',
@@ -266,6 +269,7 @@ const jobs = [
     // ── IT JOBS ──
     {
         id: 'it-001',
+        slug: 'senior-software-engineer',
         category: 'it',
         tags: ['it','remote','contract'],
         title: 'Senior Software Engineer',
@@ -283,6 +287,7 @@ const jobs = [
     },
     {
         id: 'it-002',
+        slug: 'devops-engineer',
         category: 'it',
         tags: ['it','contract'],
         title: 'DevOps Engineer',
@@ -300,6 +305,7 @@ const jobs = [
     },
     {
         id: 'it-003',
+        slug: 'ai-ml-engineer',
         category: 'it',
         tags: ['it','remote','contract'],
         title: 'AI/ML Engineer',
@@ -317,6 +323,7 @@ const jobs = [
     },
     {
         id: 'it-004',
+        slug: 'qa-automation-engineer',
         category: 'it',
         tags: ['it','contract'],
         title: 'QA Automation Engineer',
@@ -334,6 +341,7 @@ const jobs = [
     },
     {
         id: 'it-005',
+        slug: 'full-stack-developer',
         category: 'it',
         tags: ['it','contract'],
         title: 'Full Stack Developer',
@@ -391,12 +399,18 @@ function renderJobs(list) {
                 <div class="flex flex-wrap gap-1">${j.skills.map(s => skillPill(s, isHC(j))).join('')}</div>
             </div>
             <div class="flex-shrink-0">
-                <a href="${j.applyUrl}"
-                   class="px-6 py-3 rounded-lg font-bold text-sm text-white block text-center transition-all hover:opacity-90 active:scale-95 ${isHC(j) ? '' : 'btn-primary'}"
-                   style="${isHC(j) ? 'background:linear-gradient(135deg,#0369a1,#0ea5e9);color:white;' : ''}"
-                   onclick="if(typeof gtag!=='undefined')gtag('event','apply_click',{'event_category':'Jobs','event_label':'${j.title}','job_id':'${j.id}'})">
-                    Apply Now →
-                </a>
+                <div class="flex flex-col gap-2">
+                    <a href="${j.applyUrl}"
+                       class="px-6 py-3 rounded-lg font-bold text-sm text-white block text-center transition-all hover:opacity-90 active:scale-95 ${isHC(j) ? '' : 'btn-primary'}"
+                       style="${isHC(j) ? 'background:linear-gradient(135deg,#0369a1,#0ea5e9);color:white;' : ''}"
+                       onclick="if(typeof gtag!=='undefined')gtag('event','apply_click',{'event_category':'Jobs','event_label':'${j.title}','job_id':'${j.id}'})">
+                        Apply Now →
+                    </a>
+                    <a href="/jobs/${j.slug}"
+                       class="px-6 py-3 rounded-lg font-semibold text-sm block text-center border border-gray-300 text-gray-700 hover:bg-gray-50 transition-all">
+                        View Details
+                    </a>
+                </div>
             </div>
         </div>
     `).join('');
