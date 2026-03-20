@@ -153,99 +153,41 @@
                                 <input type="text" name="location" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent text-sm" placeholder="City, State">
                             </div>
                         </div>
-                        <!-- Role Track Selector (Radio) -->
+                        <!-- Role Category -->
                         <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-3">I am applying for <span class="text-red-500">*</span></label>
-                            <!-- Radio toggle row -->
-                            <div class="grid grid-cols-2 gap-3 mb-4">
-                                <label id="track-it-label" class="flex items-center gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all border-purple-600 bg-purple-50" style="border-color:#7C3AED;background:#f5f3ff;">
-                                    <input type="radio" name="trackSelector" id="track-it" value="IT" class="w-4 h-4 accent-purple-700" checked>
-                                    <div>
-                                        <div class="font-bold text-sm text-purple-800">💻 Information Technology</div>
-                                        <div class="text-xs text-gray-500 mt-0.5">Software, DevOps, Cloud, QA, Healthcare IT</div>
-                                    </div>
-                                </label>
-                                <label id="track-hc-label" class="flex items-center gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all border-gray-300 bg-white">
-                                    <input type="radio" name="trackSelector" id="track-hc" value="Healthcare" class="w-4 h-4 accent-blue-600">
-                                    <div>
-                                        <div class="font-bold text-sm" style="color:#0c4a6e;">🏥 Healthcare</div>
-                                        <div class="text-xs text-gray-500 mt-0.5">Nursing, Allied Health, Behavioral Health</div>
-                                    </div>
-                                </label>
-                            </div>
-
-                            <!-- IT dropdown (default visible) -->
-                            <div id="dropdown-it">
-                                <select name="roleCategory" id="roleCategory" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent text-sm">
-                                    <option value="">Select your IT specialty...</option>
-                                    <optgroup label="Software Engineering">
-                                        <option value="IT — Software Engineer">Software / Full Stack Engineer</option>
-                                        <option value="IT — Frontend Engineer">Frontend Engineer (React, Vue, Angular)</option>
-                                        <option value="IT — Backend Engineer">Backend Engineer (Node, Java, Python, .NET)</option>
-                                        <option value="IT — Mobile Developer">Mobile Developer (iOS / Android)</option>
-                                    </optgroup>
-                                    <optgroup label="DevOps / Cloud / Infrastructure">
-                                        <option value="IT — DevOps/Cloud">DevOps / Cloud Engineer</option>
-                                        <option value="IT — Site Reliability">Site Reliability Engineer (SRE)</option>
-                                        <option value="IT — Cloud Architect">Cloud Architect (AWS / Azure / GCP)</option>
-                                        <option value="IT — Network/Systems Admin">Network / Systems Administrator</option>
-                                    </optgroup>
-                                    <optgroup label="Data / AI / Analytics">
-                                        <option value="IT — Data/AI/ML">Data / AI / ML Engineer</option>
-                                        <option value="IT — Data Analyst">Data Analyst / BI Developer</option>
-                                        <option value="IT — Data Engineer">Data Engineer / ETL</option>
-                                    </optgroup>
-                                    <optgroup label="QA / Testing / Security">
-                                        <option value="IT — QA/Testing">QA / Test Automation Engineer</option>
-                                        <option value="IT — Cybersecurity">Cybersecurity Analyst / Engineer</option>
-                                    </optgroup>
-                                    <optgroup label="Business / Project Management">
-                                        <option value="IT — Business Analyst">Business Analyst</option>
-                                        <option value="IT — Project Manager">Project Manager / Scrum Master</option>
-                                        <option value="IT — Product Manager">Product Manager</option>
-                                    </optgroup>
-                                    <optgroup label="Healthcare IT">
-                                        <option value="Healthcare IT — EPIC Analyst">EPIC Analyst / Implementation Consultant</option>
-                                        <option value="Healthcare IT — EHR Trainer">EHR Trainer / Go-Live Support</option>
-                                        <option value="Healthcare IT — Informatics">Clinical Informatics Specialist</option>
-                                        <option value="Healthcare IT — HL7/FHIR">HL7 / FHIR Integration Analyst</option>
-                                        <option value="Healthcare IT — HIPAA">HIPAA Compliance Analyst</option>
-                                        <option value="Healthcare IT — Other">Healthcare IT — Other</option>
-                                    </optgroup>
-                                    <option value="IT — Other">Other IT / Technical Role</option>
-                                </select>
-                            </div>
-
-                            <!-- Healthcare dropdown (hidden by default) -->
-                            <div id="dropdown-hc" class="hidden">
-                                <select name="roleCategoryHC" id="roleCategoryHC" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0ea5e9] focus:border-transparent text-sm">
-                                    <option value="">Select your clinical specialty...</option>
-                                    <optgroup label="Nursing">
-                                        <option value="Nursing — RN (Travel)">RN — Travel Nurse (All Specialties)</option>
-                                        <option value="Nursing — RN (ICU/Critical Care)">RN — ICU / Critical Care</option>
-                                        <option value="Nursing — RN (ER/Emergency)">RN — ER / Emergency</option>
-                                        <option value="Nursing — RN (Med-Surg/Tele)">RN — Med-Surg / Telemetry</option>
-                                        <option value="Nursing — RN (Cardiothoracic ICU)">RN — Cardiothoracic ICU (CTICU)</option>
-                                        <option value="Nursing — RN (OR/Periop)">RN — OR / Perioperative</option>
-                                        <option value="Nursing — LPN">Licensed Practical Nurse (LPN)</option>
-                                        <option value="Nursing — CNA">Certified Nursing Assistant (CNA)</option>
-                                    </optgroup>
-                                    <optgroup label="Allied Health">
-                                        <option value="Allied Health — Cath Lab Tech">Cardiac Cath Lab Technician (RCIS)</option>
-                                        <option value="Allied Health — Rad/CT/MRI Tech">Radiologic / CT / MRI Technologist</option>
-                                        <option value="Allied Health — Respiratory Therapist">Respiratory Therapist (RRT/CRT)</option>
-                                        <option value="Allied Health — PT">Physical Therapist (PT)</option>
-                                        <option value="Allied Health — OT">Occupational Therapist (OT)</option>
-                                        <option value="Allied Health — Surgical Tech">Surgical Technologist</option>
-                                    </optgroup>
-                                    <optgroup label="Behavioral Health">
-                                        <option value="Behavioral Health — LCSW/LMHC">Licensed Clinical Social Worker (LCSW) / LMHC</option>
-                                        <option value="Behavioral Health — Psychologist">Psychologist (LP)</option>
-                                        <option value="Behavioral Health — MH Clinician">Mental Health Clinician</option>
-                                        <option value="Behavioral Health — SUDC">Substance Use Disorder Counselor</option>
-                                    </optgroup>
-                                </select>
-                            </div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">I am applying for <span class="text-red-500">*</span></label>
+                            <select name="roleCategory" id="roleCategory" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8C547] focus:border-transparent text-sm">
+                                <option value="">Select your specialty...</option>
+                                <optgroup label="Healthcare — Clinical">
+                                    <option value="Nursing — RN (Travel)">Nursing — RN (Travel Contract)</option>
+                                    <option value="Nursing — RN (ICU/Critical Care)">Nursing — RN ICU / Critical Care</option>
+                                    <option value="Nursing — RN (ER/Emergency)">Nursing — RN ER / Emergency</option>
+                                    <option value="Nursing — RN (Med-Surg/Tele)">Nursing — RN Med-Surg / Telemetry</option>
+                                    <option value="Nursing — LPN/CNA">Nursing — LPN / CNA</option>
+                                    <option value="Allied Health — Cath Lab Tech">Allied Health — Cardiac Cath Lab Technician</option>
+                                    <option value="Allied Health — Rad/CT/MRI Tech">Allied Health — Rad Tech / CT / MRI</option>
+                                    <option value="Allied Health — Respiratory Therapist">Allied Health — Respiratory Therapist</option>
+                                    <option value="Allied Health — PT/OT">Allied Health — Physical / Occupational Therapist</option>
+                                    <option value="Behavioral Health — LCSW/LMHC">Behavioral Health — LCSW / LMHC</option>
+                                    <option value="Behavioral Health — Psychologist">Behavioral Health — Psychologist (LP)</option>
+                                    <option value="Behavioral Health — MH Clinician">Behavioral Health — Mental Health Clinician</option>
+                                </optgroup>
+                                <optgroup label="Healthcare IT">
+                                    <option value="Healthcare IT — EPIC Analyst">Healthcare IT — EPIC Analyst / Consultant</option>
+                                    <option value="Healthcare IT — EHR Trainer">Healthcare IT — EHR Trainer</option>
+                                    <option value="Healthcare IT — Informatics">Healthcare IT — Clinical Informatics</option>
+                                    <option value="Healthcare IT — Other">Healthcare IT — Other</option>
+                                </optgroup>
+                                <optgroup label="IT / Technology">
+                                    <option value="IT — Software Engineer">IT — Software / Full Stack Engineer</option>
+                                    <option value="IT — DevOps/Cloud">IT — DevOps / Cloud Engineer</option>
+                                    <option value="IT — Data/AI/ML">IT — Data / AI / ML Engineer</option>
+                                    <option value="IT — QA/Testing">IT — QA / Test Automation</option>
+                                    <option value="IT — Business Analyst">IT — Business Analyst / PM</option>
+                                    <option value="IT — Cybersecurity">IT — Cybersecurity</option>
+                                    <option value="IT — Other">IT — Other Technical Role</option>
+                                </optgroup>
+                            </select>
                         </div>
                         <!-- Specific Role Title + Years Experience -->
                         <div class="grid md:grid-cols-2 gap-5">
@@ -327,7 +269,7 @@
                         </div>
                         <!-- Error -->
                         <div id="errorMessage" class="hidden bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-lg">
-                            <p class="font-semibold">⚠️ Submission failed. Please try again or email your resume directly to <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f49d9a929bb487809586839b869f929b869791da9a9180">[email&#160;protected]</a></strong></p>
+                            <p class="font-semibold">⚠️ Submission failed. Please try again or email your resume directly to <strong>info@starworkforce.net</strong></p>
                         </div>
                     </form>
                 </div>
@@ -377,7 +319,7 @@
                     <div class="text-xs text-gray-700 space-y-2">
                         <div class="flex items-start gap-2"><svg class="w-3 h-3 mt-0.5 flex-shrink-0 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg><span>5465 Legacy Drive Suite 650, Plano TX 75024</span></div>
                         <div class="flex items-center gap-2"><svg class="w-3 h-3 flex-shrink-0 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg><a href="tel:+14697133993" class="text-purple-700 font-semibold">(469) 713-3993</a></div>
-                        <div class="flex items-center gap-2"><svg class="w-3 h-3 flex-shrink-0 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="274e49414867545346555048554c414855444209494253">[email&#160;protected]</a></span></div>
+                        <div class="flex items-center gap-2"><svg class="w-3 h-3 flex-shrink-0 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg><span>info@starworkforce.net</span></div>
                     </div>
                 </div>
 
@@ -419,120 +361,68 @@
 <script>
 document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('hidden');});
 
-// =====================================================
-// TRACK SELECTOR — Radio toggle switches dropdowns
-// =====================================================
-const trackIT  = document.getElementById('track-it');
-const trackHC  = document.getElementById('track-hc');
-const labelIT  = document.getElementById('track-it-label');
-const labelHC  = document.getElementById('track-hc-label');
-const dropIT   = document.getElementById('dropdown-it');
-const dropHC   = document.getElementById('dropdown-hc');
-const selIT    = document.getElementById('roleCategory');
-const selHC    = document.getElementById('roleCategoryHC');
-
-function applyTrackIT() {
-    dropIT.classList.remove('hidden');
-    dropHC.classList.add('hidden');
-    selIT.required = true;
-    selHC.required = false;
-    selHC.removeAttribute('name');
-    selIT.setAttribute('name','roleCategory');
-    labelIT.style.borderColor = '#7C3AED'; labelIT.style.background = '#f5f3ff';
-    labelHC.style.borderColor = '#d1d5db'; labelHC.style.background = 'white';
-}
-
-function applyTrackHC() {
-    dropHC.classList.remove('hidden');
-    dropIT.classList.add('hidden');
-    selHC.required = true;
-    selIT.required = false;
-    selIT.removeAttribute('name');
-    selHC.setAttribute('name','roleCategory');
-    labelHC.style.borderColor = '#0ea5e9'; labelHC.style.background = '#f0f9ff';
-    labelIT.style.borderColor = '#d1d5db'; labelIT.style.background = 'white';
-}
-
-trackIT.addEventListener('change', applyTrackIT);
-trackHC.addEventListener('change', applyTrackHC);
-
-// =====================================================
-// URL PARAM PRE-FILL
-// apply.html?job=Senior+Software+Engineer&category=IT
-// apply.html?job=RN+ICU&category=Healthcare
-// =====================================================
-(function() {
-    const params   = new URLSearchParams(window.location.search);
-    const job      = params.get('job');
-    const category = params.get('category');
-
-    if (category === 'Healthcare') {
-        trackHC.checked = true;
-        applyTrackHC();
-    } else {
-        trackIT.checked = true;
-        applyTrackIT();
-    }
-
-    if (job) {
-        const activeSel = (category === 'Healthcare') ? selHC : selIT;
-        for (let opt of activeSel.options) {
-            if (opt.value === job || opt.text === job) { activeSel.value = opt.value; break; }
-        }
-        const roleTitleField = document.querySelector('input[name="roleTitle"]');
-        if (roleTitleField && !roleTitleField.value) roleTitleField.value = job;
-    }
-})();
-
-// =====================================================
-// FILE DROP ZONE
-// =====================================================
-const dropZone        = document.getElementById('dropZone');
-const fileInput       = document.getElementById('resumeFile');
-const browseBtn       = document.getElementById('browseBtn');
-const dropContent     = document.getElementById('dropContent');
-const fileSelected    = document.getElementById('fileSelected');
+// --- File drop zone ---
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('resumeFile');
+const browseBtn = document.getElementById('browseBtn');
+const dropContent = document.getElementById('dropContent');
+const fileSelected = document.getElementById('fileSelected');
 const fileNameDisplay = document.getElementById('fileNameDisplay');
-const removeFileBtn   = document.getElementById('removeFile');
+const removeFileBtn = document.getElementById('removeFile');
 
 browseBtn.addEventListener('click', () => fileInput.click());
 dropZone.addEventListener('click', (e) => { if(e.target !== removeFileBtn) fileInput.click(); });
-fileInput.addEventListener('change', function() { if(this.files[0]) showFile(this.files[0]); });
-dropZone.addEventListener('dragover',  (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
+
+fileInput.addEventListener('change', function() {
+    if(this.files[0]) showFile(this.files[0]);
+});
+
+dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
 dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
 dropZone.addEventListener('drop', (e) => {
-    e.preventDefault(); dropZone.classList.remove('dragover');
-    if(e.dataTransfer.files[0]) { fileInput.files = e.dataTransfer.files; showFile(e.dataTransfer.files[0]); }
+    e.preventDefault();
+    dropZone.classList.remove('dragover');
+    if(e.dataTransfer.files[0]) {
+        fileInput.files = e.dataTransfer.files;
+        showFile(e.dataTransfer.files[0]);
+    }
 });
+
 function showFile(f) {
     fileNameDisplay.textContent = f.name + ' (' + (f.size/1024/1024).toFixed(2) + ' MB)';
     dropContent.classList.add('hidden');
     fileSelected.classList.remove('hidden');
 }
+
 removeFileBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); fileInput.value = '';
-    dropContent.classList.remove('hidden'); fileSelected.classList.add('hidden');
+    e.stopPropagation();
+    fileInput.value = '';
+    dropContent.classList.remove('hidden');
+    fileSelected.classList.add('hidden');
 });
 
-// =====================================================
-// FORM SUBMISSION
-// =====================================================
+// --- Form submission ---
 document.getElementById('applyForm').addEventListener('submit', async function(e) {
     e.preventDefault();
-    const form       = e.target;
-    const submitBtn  = document.getElementById('submitBtn');
+    const form = e.target;
+    const submitBtn = document.getElementById('submitBtn');
     const successMsg = document.getElementById('successMessage');
-    const errorMsg   = document.getElementById('errorMessage');
+    const errorMsg = document.getElementById('errorMessage');
 
     successMsg.classList.add('hidden');
     errorMsg.classList.add('hidden');
 
-    if (!fileInput.files[0]) { alert('Please upload your resume before submitting.'); return; }
+    // Validate resume file
+    if (!fileInput.files[0]) {
+        alert('Please upload your resume before submitting.');
+        return;
+    }
 
     submitBtn.disabled = true;
     submitBtn.textContent = 'Submitting...';
 
     try {
+        // Convert file to base64 for API
         const fileBase64 = await new Promise((resolve, reject) => {
             const reader = new FileReader();
             reader.onload = () => resolve(reader.result.split(',')[1]);
@@ -540,26 +430,20 @@ document.getElementById('applyForm').addEventListener('submit', async function(e
             reader.readAsDataURL(fileInput.files[0]);
         });
 
-        // Read whichever dropdown has name="roleCategory" at submit time
-        const activeSel     = document.querySelector('select[name="roleCategory"]');
-        const selectedRole  = activeSel ? activeSel.value : '';
-        const selectedTrack = trackHC.checked ? 'Healthcare' : 'IT';
-
         const payload = {
-            fullName:       form.fullName.value,
-            email:          form.email.value,
-            phone:          form.phone.value,
-            location:       form.location ? form.location.value : '',
-            roleCategory:   selectedRole,
-            track:          selectedTrack,
-            roleTitle:      form.roleTitle ? form.roleTitle.value : '',
-            yearsExp:       form.yearsExp ? form.yearsExp.value : '',
-            availability:   form.availability ? form.availability.value : '',
-            workPreference: form.workPreference ? form.workPreference.value : '',
-            coverLetter:    form.coverLetter ? form.coverLetter.value : '',
+            fullName: form.fullName.value,
+            email: form.email.value,
+            phone: form.phone.value,
+            location: form.location.value || '',
+            roleCategory: form.roleCategory.value,
+            roleTitle: form.roleTitle.value || '',
+            yearsExp: form.yearsExp.value || '',
+            availability: form.availability.value || '',
+            workPreference: form.workPreference.value || '',
+            coverLetter: form.coverLetter.value || '',
             resumeFileName: fileInput.files[0].name,
             resumeFileType: fileInput.files[0].type,
-            resumeBase64:   fileBase64
+            resumeBase64: fileBase64
         };
 
         const response = await fetch('/api/apply', {
@@ -567,6 +451,7 @@ document.getElementById('applyForm').addEventListener('submit', async function(e
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         });
+
         const data = await response.json();
 
         if (response.ok && data.success) {
@@ -574,13 +459,11 @@ document.getElementById('applyForm').addEventListener('submit', async function(e
             form.reset();
             dropContent.classList.remove('hidden');
             fileSelected.classList.add('hidden');
-            trackIT.checked = true; applyTrackIT();
             successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
             if(typeof gtag !== 'undefined') {
-                gtag('event','application_submit',{
-                    'event_category':'Apply',
-                    'event_label': selectedRole,
-                    'track': selectedTrack
+                gtag('event', 'application_submit', {
+                    'event_category': 'Apply',
+                    'event_label': payload.roleCategory
                 });
             }
         } else {
