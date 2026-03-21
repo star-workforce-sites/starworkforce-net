@@ -2,51 +2,42 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/:page.html",
-      "destination": "/:page",
-      "permanent": true
-    },
-    {
-      "source": "/privacy",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/privacy.html",
-      "destination": "/",
-      "permanent": true
-    }
+    { "source": "/index.html",        "destination": "/",            "permanent": true },
+    { "source": "/:page.html",        "destination": "/:page",       "permanent": true },
+
+    { "source": "/legal/:page.html",  "destination": "/legal/:page", "permanent": true },
+
+    { "source": "/jobs.html",         "destination": "/pages/jobs",  "permanent": true },
+    { "source": "/careers.html",      "destination": "/pages/jobs",  "permanent": true },
+
+    { "source": "/investor",          "destination": "/about",       "permanent": true },
+    { "source": "/investor/:path*",   "destination": "/services",    "permanent": true },
+
+    { "source": "/products.html",     "destination": "/services",    "permanent": true },
+
+    { "source": "/privacy",           "destination": "/legal/privacy-policy", "permanent": true },
+    { "source": "/privacy.html",      "destination": "/legal/privacy-policy", "permanent": true },
+
+    { "source": "/legal/ai-policy",           "destination": "/legal/privacy-policy",  "permanent": true },
+    { "source": "/legal/ai-policy.html",      "destination": "/legal/privacy-policy",  "permanent": true },
+    { "source": "/legal/disclaimer",          "destination": "/legal/terms-of-service", "permanent": true },
+    { "source": "/legal/disclaimer.html",     "destination": "/legal/terms-of-service", "permanent": true },
+    { "source": "/legal/data-processing",     "destination": "/legal/privacy-policy",  "permanent": true },
+    { "source": "/legal/data-processing.html","destination": "/legal/privacy-policy",  "permanent": true },
+
+    { "source": "/home-v1",           "destination": "/",            "permanent": true },
+    { "source": "/home-v1/",          "destination": "/",            "permanent": true },
+    { "source": "/2016/:path*",       "destination": "/",            "permanent": true }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Link",
-          "value": "<https://www.starworkforce.net$1>; rel=\"canonical\""
-        }
+        { "key": "X-Content-Type-Options",  "value": "nosniff" },
+        { "key": "X-Frame-Options",         "value": "DENY" },
+        { "key": "X-XSS-Protection",        "value": "1; mode=block" },
+        { "key": "Referrer-Policy",         "value": "strict-origin-when-cross-origin" },
+        { "key": "Link",                    "value": "<https://www.starworkforce.net$1>; rel=\"canonical\"" }
       ]
     }
   ]
