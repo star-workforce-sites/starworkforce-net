@@ -5,5 +5,8 @@
   "dependencies": {
     "nodemailer": "^6.9.8"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
 }
